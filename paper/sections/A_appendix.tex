@@ -1,0 +1,11 @@
+\section{Additional Experimental Context}
+
+The canonical project report records the full run history from R003 through R045. R003 is frozen OpenCLIP. R005 is the plain adapter baseline. R006/R011/R012/R014 are hard-token bottleneck diagnostics. R019/R025/R027 are full RRB seed checks. R023 removes the targeted loss under the earlier anchor setting. R024 replaces structured counterfactuals with generic hard negatives. R028 is the selected no-targeted stronger-anchor checkpoint. R029 is the matched targeted control. R031/R032 replicate the selected no-targeted setting. R033 and R040 are no-channel residual controls. R034 is Winoground. R035--R039 are anchor-20 no-targeted runs. R041 probes channel responsibility. R043 tests the ROP ablation, and R045 evaluates Flickr30k retrieval.
+
+\section{Supplementary Artifacts}
+
+Detailed diagnostic logs, per-category failure reports, seed summaries, and external-check summaries for all runs are available in the supplementary material. The paper text only reports aggregate values that are used in the main figures and tables, so reviewers do not need local filesystem or server access to follow the argument.
+
+\section{Reproducibility Notes}
+
+Figures and tables in this paper are generated from the consolidated Markdown and JSON experiment summaries. The asset-generation script writes TikZ and table snippets for the main paper, keeping the reported figures tied to recorded experiment outputs rather than a separate manual spreadsheet.

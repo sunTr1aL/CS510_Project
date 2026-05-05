@@ -1,0 +1,40 @@
+{
+  "command": "python3 -m experiments.run_experiment --run-id R011 --output-root outputs/dry --device cuda --dry-run --model-name ViT-B-16 --pretrained laion2b_s34b_b88k --max-examples-per-key 256 --eval-limit-per-key 512 --write-records --full-eval-after-train --epochs 2 --batch-size 16 --lr 0.0001",
+  "resolved": {
+    "audit_jsonl": null,
+    "batch_size": 16,
+    "benchmark_root": null,
+    "checkpoint": null,
+    "dataset_root": null,
+    "device": "cuda",
+    "dry_run": true,
+    "epochs": 2,
+    "eval_keys": null,
+    "eval_limit_per_key": 512,
+    "full_eval_after_train": true,
+    "lr": 0.0001,
+    "max_examples_per_key": 256,
+    "model_name": "ViT-B-16",
+    "output_dir": "outputs/dry/R011",
+    "pretrained": "laion2b_s34b_b88k",
+    "seed": 1,
+    "slot_count": 8,
+    "smoke": false,
+    "variant_mode": null,
+    "write_records": true
+  },
+  "run": {
+    "metrics": [
+      "block1_all_metrics"
+    ],
+    "milestone": "M3",
+    "priority": "MUST",
+    "purpose": "Main-table seed 1",
+    "run_id": "R011",
+    "seed": 1,
+    "slot_count": 8,
+    "split": "main training split",
+    "stage": "train",
+    "variant": "best_full_model"
+  }
+}
