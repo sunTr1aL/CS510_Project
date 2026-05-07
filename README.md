@@ -14,4 +14,5 @@ The paper-facing method is Anchored Relational Residual Bottleneck (RRB): a boun
 
 The git package intentionally excludes raw literature PDFs, downloaded benchmarks, checkpoints, full remote output directories, Python caches, LaTeX intermediates, local TeX package caches, and private review-loop state. These files are either large, generated, not redistributable, or unnecessary for reproducing the reported tables and paper source.
 
+## Submitted Project Report
 The checked-in final paper is `paper/main.pdf`.
