@@ -1,7 +1,0 @@
-\section{Conclusion}
-
-RRB keeps the frozen OpenCLIP embedding path and learns a bounded relational residual from parser-free token channels. In the available runs, this design improves staged relation accuracy with far less guardrail damage than hard replacement bottlenecks and no-channel residual controls. The key supervision is structured relational counterfactual training under residual anchoring; the targeted relational loss is not necessary for the supported effect.
-
-The result should be read as a tradeoff analysis. COCO retention remains seed-fragile, and that fragility is itself part of the finding rather than a minor implementation detail. Winoground is not improved, Flickr30k shows an external retrieval tax, and channel responsibility is diffuse. Future work should compare against standard PEFT baselines, test broader retrieval and binding distributions, and develop better constraints on residual direction rather than residual magnitude alone.
-
-The main value of the study is the failure-aware path it establishes. It shows that relation signal can be added to a frozen CLIP-style encoder without replacing the embedding path, but it also shows that preservation must be measured directly and repeatedly. The strongest next version of this work would keep the conservative claim boundary, add matched PEFT and larger retrieval baselines, and test whether residual-direction constraints can make the relation gain less seed-fragile.
