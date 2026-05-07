@@ -1,9 +1,0 @@
-{
-  "count": 2,
-  "filter_keep_rate": 1.0,
-  "margin_max": 0.31,
-  "margin_mean": 0.29000000000000004,
-  "margin_min": 0.27,
-  "mean_edit_locality": 0.5795454545454546,
-  "mean_lexical_overlap": 0.9090909090909092
-}
